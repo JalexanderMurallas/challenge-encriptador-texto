@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+
+:root {
+
+    --dark-blue: #0A3871;
+    --gray: #C5C5C5;
+    --medium-gray: #67808E;
+    --rgba: rgba(0,0,0,0.03);
+    --white-blue: #D8DFE8;
+    --font: #E5E5E5E5;
+    --bgnd: #FFFFFF;
+    --medium-blue: #0a38718a;
+    --grey: #343A40;
+    --light-grey: #495057;
+    --color-dark-mode: #021526;
+    ----Light-blue: #F3F5FC;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    
+}
+
+::selection {
+
+    background: var(--dark-blue);
+    color: var(--font);
+}
+
+body {
+
+    height: 100%;
+}
+
+img {
+
+    max-width: 100%;
+}
+
+
+
+header {
+    width: 80%;
+    height: 4.375rem;
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+header .logo-alura {
+    width: 120px;
+    height: 48px;
+}
+
+
+
+.main  {
+
+    display: flex;
+    flex-direction: row;
+    background: var(--Light-blue, #F3F5FC);
+    background-size: cover;
+    background-position: center;
+}
+
+.encriptador {
+
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+
+}
+
+.texto-encriptar {
+
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--gray);
+    border-radius: 15px;
+    resize: none;
+}
+
+.texto-encriptar::placeholder, :focus {
+
+    color: var(--dark-blue);
+}
+
+.aviso-encriptador {
+
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+
+}
+
+.aviso-texto {
+
+    width: 100%;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--medium-gray);
+    
+
+}
+
+.encriptador-container {
+
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.btn-encriptar {
+
+    width: 330px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--bgnd);
+    background: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.btn-encriptar:active {
+
+    color: var(--white-blue);
+    box-shadow: inset 2px 2px 4px var(--bgnd),
+    inset -3px -4px 8px var(--dark-blue);
+    
+}
+
+.btn-desencriptar {
+
+    width: 330px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--dark-blue);
+    background: var(--white-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.btn-copiar:active,
+.btn-desencriptar:active {
+
+    box-shadow: inset 2px 2px 4px var(--dark-blue),
+    inset -3px -4px 8px var(--bgnd);
+    color: var(--medium-blue);
+}
+
+.tarjeta-texto {
+
+    width: 270px;
+    height: 580px;
+    background: var(--font);
+    box-shadow: 10px 24px 32px -8px var(--grey);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.tarjeta-container {
+
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--font);
+}
+
+.muñeco {
+
+    background: var(--font);
+} 
+
+.texto-uno {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--grey);
+    background: var(--font);
+}
+
+.texto-dos {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--medium-gray);
+    background: var(--font);
+}
+
+.result {
+
+    width: 100%;
+    height: 490px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--light-grey);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.result:focus {
+
+    outline: none;
+
+
+}
+
+.btn-copiar {
+
+    width: 225px;
+    height: 70px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--white-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.btn-copiar:hover {
+
+
+    transform: scale(0.98);
+}
+
+
+footer {
+    margin-top: 25px;
+    padding: 10px;
+    border-top: 2px solid var(--font);
+    color: var(--grey);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+@media(max-width: 1250px) {
+
+    .main {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador {
+
+        margin: 170px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador-container {
+
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .aviso-encriptador {
+
+        position: inherit;
+        margin: 15px;
+
+    }
+
+    .tarjeta-texto {
+
+        width: 670px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .tarjeta-container {
+
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 25px;
+        font-weight: 700;
+
+
+    }
+
+    .muñeco {
+
+        display: none;
+    }
+
+    .btn-copiar {
+
+        position: inherit;
+        width: 100%;
+
+    }
+
+    .result {
+
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px) {
+
+    
+    header .alura-logo {
+
+        padding: 2px;
+    
+    }
+
+    .texto-encriptar {
+
+        width: 90%;
+        font-size: 25px;
+    }
+
+    .encriptador-container {
+
+        display: grid;
+        gap: 21px;
+
+    }
+
+    .tarjeta-texto {
+
+        width: 90%;
+    }
+
+}
